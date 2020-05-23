@@ -23,4 +23,48 @@ public class Funciones {
 		}
 		return result;
 	}
+
+	public static String Funcion2(String palabra, String palabra2) {
+
+		int vocal1 = 0;
+		int vocal2 = 0;
+		int conso1 = 0;
+		int conso2 = 0;
+		int palabrafinal = palabra.length();
+		int palabrafinal2 = palabra2.length();
+		String result = null;
+
+		for (int x = 0; x < palabrafinal; x++) {
+			if ((palabra.charAt(x) == 'a') || (palabra.charAt(x) == 'e') || (palabra.charAt(x) == 'o')
+					|| (palabra.charAt(x) == 'i') || (palabra.charAt(x) == 'u')) 
+					 {
+				vocal1++;
+			}
+			conso1 = palabrafinal - vocal1;
+		}
+		for (int y = 0; y < palabrafinal2; y++) {
+			if ((palabra2.charAt(y) == 'a') || (palabra2.charAt(y) == 'e') || (palabra2.charAt(y) == 'o')
+					|| (palabra2.charAt(y) == 'i') || (palabra2.charAt(y) == 'u') 
+					) {
+				vocal2++;
+			}
+			conso2 = palabrafinal2 - vocal2;
+		}
+
+		if (conso1 > conso2) {
+
+			result = palabra;
+
+		} else if (conso1 < conso2) {
+
+			result = palabra2;
+
+		} else if (conso1 == conso2) {
+
+			result = null;
+		}
+		return result;
+
+	}
 }
+
