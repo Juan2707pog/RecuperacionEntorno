@@ -64,7 +64,21 @@ public class Funciones {
 			result = null;
 		}
 		return result;
+	}
+	public static Integer Funciones3(int[] numeros) {
 
+		int resultado = 0;
+		int edad = 18;
+		int MitadEdad = 9;
+
+		for (int i = 0; i < numeros.length; i++) {
+
+			if (numeros[i] >= MitadEdad && numeros[i] <= edad) {
+				resultado += numeros[i];
+			}
+
+		}
+		return resultado;
 	}
 }
 
