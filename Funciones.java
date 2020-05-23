@@ -115,5 +115,29 @@ public class Funciones {
 		}
 		return resultado;
 	}
+	public static Integer funcion5(String sig, int num1, int num2) {
+
+		int resultado = 0;
+		boolean resultadoposible;
+		if (sig == "+") {
+			resultado = num1 + num2;
+			resultadoposible = true;
+		} else if (sig == "-") {
+
+			resultado = num1 - num2;
+			resultadoposible = true;
+		} else if (sig == "*") {
+
+			resultado = num1 * num2;
+			resultadoposible= true;
+			
+		} else {
+			resultado = 0;
+			resultadoposible = false;
+		}
+		System.out.println(resultadoposible);
+		return resultado;
+//Cabe aclarar que el resultado posible es para poder diferenciar cuando 0 significa que realmente la oepracion da 0 y cuando da 0 porque no es posible hacer una operacion
+	}
 }
 
