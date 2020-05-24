@@ -8,12 +8,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class PruebasFunciones5{
-    static Funciones5 funcion = null;
+    static Funciones funcion = null;
     static int pruebasRealizadas = 0;
     @BeforeAll
     static void prepararPruebas() {
         System.out.println("Preparando Tests");
-        funcion = new Funciones5();
+        funcion = new Funciones();
     }
     @BeforeEach
     private void preparaPruebaEjecutar() {
